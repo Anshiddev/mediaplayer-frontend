@@ -44,9 +44,12 @@ function VideoCard({video,setDel,cat}) {
         <Card.Img variant="top" onClick={handleShow} src={video.image} style={{height:'250px'}}/>
         <Card.Body>
           <Card.Title >{video.caption}</Card.Title>
-          <Button className="btn float-end" onClick={()=>{handleDelete(video.id)}}>
-          <i class="fa-solid fa-trash"></i>
-          </Button>
+          {
+            !cat &&
+            <Button className="btn float-end" onClick={()=>{handleDelete(video.id)}}>
+            <i class="fa-solid fa-trash"></i>
+            </Button>
+          }      
         </Card.Body>
       </Card>
 

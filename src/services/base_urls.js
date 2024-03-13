@@ -1,1 +1,1 @@
-export const BASE_URL = "http://localhost:3000"
+export const BASE_URL = "https://mediaplayer-json-server-l59z.onrender.com"
